@@ -1,2 +1,100 @@
 @import "reset.css";
 
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #b9dee6;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.userCardContainer {
+    min-height: 550px;
+    min-width: 250px;
+    max-width: 500px;
+    width: 330px;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(23, 22, 22, 0.5);
+    border-radius: 5px;
+    position: relative;
+}
+
+.imageContainer {
+    margin-top: 20px;
+    --size: 150px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    border: 10px solid #eeeeee;
+    overflow: hidden;
+
+}
+
+.userFlagCard {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 2px 5px 0 rgba(120, 120, 120, 0.5);
+    object-fit: cover;
+    position: absolute;
+    right: 110px;
+    top: 170px;
+}
+
+.userImageCard {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+
+.userNameCard {
+    padding-top: 30px;
+    --line-height: 1.5em;
+    font-size: 2rem;
+    line-height: var(--line-height);
+    color: #fe4308;
+}
+
+.userProfCard {
+    font-size: 1.2rem;
+    line-height: 1.2em;
+
+
+
+}
+
+.userDescription {
+    padding-top: 50px;
+    line-height: 1.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    box-orient: vertical;
+}
+
+.userContacts {
+    margin: auto 0;
+}
+
+.userLink {
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 30px 25px;
+}
+
